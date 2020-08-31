@@ -1,5 +1,5 @@
 # TextEditor
-a text editor made with <a target="_blank" href="https://godotengine.org/">godot engine</a> using C#
+a text editor made with <a target="__blank" href="https://godotengine.org/">godot engine</a> using C#
 
 its still in development 
 
