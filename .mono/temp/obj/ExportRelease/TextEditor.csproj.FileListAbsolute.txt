@@ -1,0 +1,6 @@
+A:\Projects\C#\Godot\TextEditor\.mono\temp\bin\ExportRelease\TextEditor.dll
+A:\Projects\C#\Godot\TextEditor\.mono\temp\bin\ExportRelease\TextEditor.pdb
+A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportRelease\TextEditor.csprojAssemblyReference.cache
+A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportRelease\TextEditor.csproj.CoreCompileInputs.cache
+A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportRelease\TextEditor.dll
+A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportRelease\TextEditor.pdb

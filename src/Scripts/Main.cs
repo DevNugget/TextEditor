@@ -33,6 +33,7 @@ public class Main : Control
 		
 		f.Open(path , File.ModeFlags.Read);
 		GetNode<TextEdit>("TextEditor").Text = f.GetAsText();
+		f.Close();
 
 	}
 
@@ -47,6 +48,7 @@ public class Main : Control
 		var f = new File();
 		f.Open(path, File.ModeFlags.Write);
 		f.StoreString(GetNode<TextEdit>("TextEditor").Text);
+		f.Close();
 	}
 }
 
