@@ -13,4 +13,5 @@ addons/FileSystemView/views.cfg
 test/
 
 #builds
-builds/
+builds/mac
+builds/win
