@@ -3,10 +3,10 @@ using System;
 
 public class Main : Control
 {
-    // private int a = 2;
-    // private string b = "text";
-    // Called when the node enters the scene tree for the first time.
-    
+	// private int a = 2;
+	// private string b = "text";
+	// Called when the node enters the scene tree for the first time.
+	
 	/*
 	public override void _Ready()
 	{
@@ -21,9 +21,9 @@ public class Main : Control
 	//  }
 	*/
 
-    /// OPEN FILE
+	/// OPEN FILE
 
-    private void openFileButtonPressed()
+	private void openFileButtonPressed()
 	{
 		GetNode<FileDialog>("openFileDialog").Popup_();
 	}
