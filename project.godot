@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="TextEditor"
+config/name="TextEditor  - Loading..."
 run/main_scene="res://src/scenes/Main.tscn"
 
 [gui]
