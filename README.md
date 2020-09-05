@@ -7,4 +7,8 @@ would be nice if somebody suggested a name for it
 
 ## <b style="color:red;">Godot Engine Mono Version required </b> 
 
+
+
 ### Discord Server https://discord.gg/uKAhqw9
+
+### Before Contributing contact me in the discord server
