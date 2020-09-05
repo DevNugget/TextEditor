@@ -5,6 +5,6 @@ its still in development
 
 would be nice if somebody suggested a name for it 
 
-<b style="background-color:red;">Godot Engine Mono Version required </b> 
+## <b style="color:red;">Godot Engine Mono Version required </b> 
 
 ### Discord Server https://discord.gg/uKAhqw9

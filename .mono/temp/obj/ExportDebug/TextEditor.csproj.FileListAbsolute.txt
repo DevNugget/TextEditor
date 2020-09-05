@@ -1,6 +1,0 @@
-A:\Projects\C#\Godot\TextEditor\.mono\temp\bin\ExportDebug\TextEditor.dll
-A:\Projects\C#\Godot\TextEditor\.mono\temp\bin\ExportDebug\TextEditor.pdb
-A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportDebug\TextEditor.csprojAssemblyReference.cache
-A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportDebug\TextEditor.csproj.CoreCompileInputs.cache
-A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportDebug\TextEditor.dll
-A:\Projects\C#\Godot\TextEditor\.mono\temp\obj\ExportDebug\TextEditor.pdb
