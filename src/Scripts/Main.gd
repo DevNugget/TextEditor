@@ -10,7 +10,7 @@ func _ready():
 	update_window_title()
 	$FileMenu.get_popup().connect("id_pressed", self, "_on_fileitem_pressed")
 	$HelpMenu.get_popup().connect("id_pressed", self, "_on_helpitem_pressed")
-	
+	$FontSize.text = "Font Size"
 	
 	
 #func shortcut_generate1(id:int, key:int, boolean:bool ):
@@ -36,7 +36,6 @@ func _on_fileitem_pressed(id):
 	match item_name:
 		"New File":new_file()
 		"Open File":$openFileDialog.popup()
-		"Open Folder(inop)":pass
 		"Save":save_file()
 		"Save As":$saveAsFileDialog.popup()
 		"Quit":get_tree().quit()
@@ -89,6 +88,26 @@ func save_file():
 		
 
 
-
 # Syntax coloring in GDQuest Discord server info
 # https://discordapp.com/channels/245092069415190528/366496657681940482/730108743198441533
+
+
+
+
+
+func _on_FontSize_item_selected(index: int) -> void:
+	match index:
+		0:$TextEditor.get("custom_fonts/font").set("size", 20)
+		1:$TextEditor.get("custom_fonts/font").set("size", 25)
+		2:$TextEditor.get("custom_fonts/font").set("size", 30)
+		3:$TextEditor.get("custom_fonts/font").set("size", 35)
+		4:$TextEditor.get("custom_fonts/font").set("size", 40)
+		5:$TextEditor.get("custom_fonts/font").set("size", 45)
+		6:$TextEditor.get("custom_fonts/font").set("size", 50)
+		7:$TextEditor.get("custom_fonts/font").set("size", 55)
+		8:$TextEditor.get("custom_fonts/font").set("size", 60)
+	$FontSize.text = "Font Size"
+
+func _on_TextEditor_text_changed() -> void:
+	$BottomLabel.text = "Lin " + String($TextEditor.cursor_get_line() + 1) + " Col " + String($TextEditor.cursor_get_column() + 1)
+	$TextEditor.auto_complete()
