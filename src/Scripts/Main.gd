@@ -32,21 +32,23 @@ func new_file():
 
 
 func _on_fileitem_pressed(id):
-	var item_name = $FileMenu.get_popup().get_item_text(id)
+	var item_name = $FileMenu.get_popup().get_item_id(id)
 	match item_name:
-		"New File":new_file()
-		"Open File":$openFileDialog.popup()
-		"Save":save_file()
-		"Save As":$saveAsFileDialog.popup()
-		"Quit":get_tree().quit()
+		0:new_file()
+		1:$openFileDialog.popup()
+		3:save_file()
+		4:$saveAsFileDialog.popup()
+		5:get_tree().quit()
 
 
 
 func _on_helpitem_pressed(id):
-	var item_name = $HelpMenu.get_popup().get_item_text(id)
+	var item_name = $HelpMenu.get_popup().get_item_id(id)
+	var _some_int:int 
 	match item_name:
-		"About":$AboutDialog.popup()
-		#"Godot":OS.shell_open("https://godotengine.org/")
+		0:$AboutDialog.popup()
+# warning-ignore:return_value_discarded
+		1:OS.shell_open("https://godotengine.org/")
 
 
 
@@ -65,9 +67,10 @@ func _on_openFileDialog_file_selected(path: String):
 	var f = File.new()
 	f.open(path, 1)
 	$TextEditor.text = f.get_as_text()
-	file_path = path
+	current_file = path.get_file()
 	update_window_title()
 	f.close()
+	
 
 
 func _on_saveAsFileDialog_file_selected(path: String):

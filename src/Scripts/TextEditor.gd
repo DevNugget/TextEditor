@@ -3,6 +3,9 @@ extends TextEdit
 var auto_compelete_right = [ "'", "{", '"', "(", "]"]
 var auto_compelete_left  = ["'", "}", '"', ")", "]"]
 
+
+
+
 func auto_complete():
 	if InputEventAction:
 		select(cursor_get_line(), cursor_get_column() - 1, cursor_get_line() , cursor_get_column())
