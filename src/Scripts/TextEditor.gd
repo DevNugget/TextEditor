@@ -1,10 +1,7 @@
 extends TextEdit
 
-var auto_compelete_right = [ "'", "{", '"', "(", "]"]
+var auto_compelete_right = [ "'", "{", '"', "(", "["]
 var auto_compelete_left  = ["'", "}", '"', ")", "]"]
-
-
-
 
 func auto_complete():
 	if InputEventAction:
@@ -15,3 +12,23 @@ func auto_complete():
 			if key == auto_compelete_right[i]:
 				insert_text_at_cursor(auto_compelete_left[i])
 				cursor_set_column(cursor_get_column() - 1)
+
+
+var keywords = [
+	"public", "private",
+	"partial", "static",
+	"namespace", "class",
+	"using", "void",
+	"foreach", "in",
+	"if", "else",
+	"return"
+]
+
+func color_syntax():
+	for i in keywords:
+		add_keyword_color(i , Color.red)
+	add_color_region("//", "\n", Color.dimgray, true)
+	add_color_region("/*", "*/" , Color.dimgray , false)
+	add_color_region("'", "'" , Color.gold, false)
+	add_color_region('"', '"', Color.gold, false)
+

@@ -11,8 +11,9 @@ func _ready():
 	$FileMenu.get_popup().connect("id_pressed", self, "_on_fileitem_pressed")
 	$HelpMenu.get_popup().connect("id_pressed", self, "_on_helpitem_pressed")
 	$FontSize.text = "Font Size"
+	$TextEditor.color_syntax()
 	
-	
+
 #func shortcut_generate1(id:int, key:int, boolean:bool ):
 #	var shortcut = ShortCut.new()
 #	var input_event_key = InputEventKey.new()
