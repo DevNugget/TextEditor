@@ -5,8 +5,8 @@ its still in development
 
 would be nice if somebody suggested a name for it 
 
-
-
+now it support basic csharp syntax highlighting
+not in the builds btw
 
 ### Discord Server https://discord.gg/uKAhqw9
 
