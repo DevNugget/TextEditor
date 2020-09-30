@@ -7,6 +7,3 @@ would be nice if somebody suggested a name for it
 
 now it support basic csharp syntax highlighting
 not in the builds btw
-
-
-### Before Contributing contact me in the discord server
