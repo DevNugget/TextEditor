@@ -5,5 +5,6 @@ its still in development
 
 would be nice if somebody suggested a name for it 
 
-now it support basic csharp syntax highlighting
-not in the builds btw
+it currently supports basic csharp syntax highlighting 
+
+to build download godot engine and open the project in godot
